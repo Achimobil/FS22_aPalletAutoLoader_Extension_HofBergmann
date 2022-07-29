@@ -3,18 +3,39 @@
     <author>Achimobil</author>
     <version>0.1.0.0</version>
     <title>
-        <de>Paletten Autoloader Erweiterung - Hof Bergmann</de>
+        <de>Hof Bergmann AL Erweiterung</de>
+        <en>Hof Bergmann AL Extension</en>
     </title>
     <description>
         <de>
-<![CDATA[Erweitert den Autoloader um die Paletten der Hof Bergmann
+<![CDATA[Erweitert den Autoloader um die meisten Paletten der Hof Bergmann.
+
+Somit kann jeder Trailer der die Paletten Autoloader Spezialisierung von Achimobil verwendet auf der Hof Bergmann verwendet werden.
+
+Erfordert die Paletten Autoloader Spezialisierung ab Version 1.8.5.0
 ]]>
         </de>
+        <en>
+<![CDATA[Extends the autoloader to use the most Hof Bergmann pallets.
+
+This means that any trailer that uses the pallet autoloader specialisation by Achimobil can be used on the Hof Bergmann.
+
+Requires the Pallet Autoloader Specialisation as of version 1.8.5.0
+]]>
+        </en>
     </description>
+    
     <iconFilename>modIcon.dds</iconFilename>
     <multiplayer supported="true"/>
+    
     <extraSourceFiles>
         <sourceFile filename="AutoloaderExtension.lua"/>
     </extraSourceFiles>
+    
+	<dependencies>
+        <dependency>FS22_HofBergmann</dependency>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+    
     <l10n filenamePrefix="translations/translation"/>
 </modDesc>
