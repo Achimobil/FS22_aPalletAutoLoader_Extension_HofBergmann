@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Achimobil</translationContributors>.
+    <texts>
+        <text name="aPalletAutoLoader_hb_woodbox" text="HB - деревянный ящик" />
+        <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - картонная коробка" />
+        <text name="aPalletAutoLoader_hb_cardboard" text="HB - Овощной ящик" />
+        <text name="aPalletAutoLoader_hb_cheese" text="HB - Сыр" />
+        <text name="aPalletAutoLoader_hb_goatcheese" text="HB - Козий сыр" />
+        <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Ящик для яиц" />
+        <text name="aPalletAutoLoader_hb_eggBox" text="HB - яйца" />
+        <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - мешок для удобрений" />
+        <text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
+        <text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
+        <text name="aPalletAutoLoader_hb_onionSack" text="HB - мешок для лука" />
+        <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - ящик клубники" />
+        <text name="aPalletAutoLoader_hb_wineCrate" text="HB - Винный ящик" />
+        <text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Корзина для винного винограда" />
+        <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wool Bundle" />
+        <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
+        <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - заполняемый поддон" />
+    </texts>
+</l10n>

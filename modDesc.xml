@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+    <author>Achimobil</author>
+    <version>0.1.0.0</version>
+    <title>
+        <de>Paletten Autoloader Erweiterung - Hof Bergmann</de>
+    </title>
+    <description>
+        <de>
+<![CDATA[Erweitert den Autoloader um die Paletten der Hof Bergmann
+]]>
+        </de>
+    </description>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="AutoloaderExtension.lua"/>
+    </extraSourceFiles>
+    <l10n filenamePrefix="translations/translation"/>
+</modDesc>
