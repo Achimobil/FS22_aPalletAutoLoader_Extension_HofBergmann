@@ -29,7 +29,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
     -- add check method and size for every additional type
     if (name == "hb_woodbox") then
         local function CheckType(object)
-            if string.find(object.configFileName, "appleBox.xml") then return true end
+            if string.find(object.configFileName, "appleBox/appleBox.xml") then return true end
 
             return false;
         end
@@ -243,6 +243,9 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         local function CheckType(object)
             if string.find(object.i3dFilename, "fillablePallet.i3d") then return true end
             
+-- print("hb_fillablePallet")
+-- DebugUtil.printTableRecursively(object,"_",0,2)
+            
             return false;
         end
 
@@ -250,6 +253,32 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeX = 1.42
         autoLoadObject.sizeY = 0.95
         autoLoadObject.sizeZ = 1.01
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_bigBox") then
+        local function CheckType(object)
+            if string.find(object.i3dFilename, "bigBox.i3d") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.98
+        autoLoadObject.sizeY = 0.78
+        autoLoadObject.sizeZ = 0.98
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_fillableAppleBox") then
+        local function CheckType(object)
+            if string.find(object.i3dFilename, "fillableAppleBox.i3d") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 1.21
+        autoLoadObject.sizeY = 0.80
+        autoLoadObject.sizeZ = 0.81
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
     end
@@ -283,6 +312,8 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_woolBundle");
     table.insert(types, "hb_bigBag");
     table.insert(types, "hb_fillablePallet");
+    table.insert(types, "hb_bigBox");
+    table.insert(types, "hb_fillableAppleBox");
     
     return types;
 end
