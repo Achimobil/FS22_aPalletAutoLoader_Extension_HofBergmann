@@ -19,5 +19,7 @@
         <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wollbündel" />
         <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Füllbare Palette" />
+        <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
+        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Füllbare Apfelpalette" />
     </texts>
 </l10n>

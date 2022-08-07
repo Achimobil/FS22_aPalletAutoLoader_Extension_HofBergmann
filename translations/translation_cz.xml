@@ -19,5 +19,7 @@
         <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Svazek vlny" />
         <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Plnitelná paleta" />
+        <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
+        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Plnitelná jablečná paleta" />
     </texts>
 </l10n>
