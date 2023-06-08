@@ -1,9 +1,9 @@
 --[[
-Copyright (C) Achimobil, 2022
+Copyright (C) Maverick1305, 2023
 
-Author: Achimobil
-Date: 28.07.2022
-Version: 0.1.0.0
+Author: Maverick1305
+Date: 11.02.2023
+Version: 0.3.0.1
 
 Contact:
 https://discord.gg/Va7JNnEkcW
@@ -46,7 +46,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 
             return false;
         end
-
+						
         autoLoadObject.CheckTypeMethod = CheckType
         autoLoadObject.sizeX = 0.37
         autoLoadObject.sizeY = 0.37
@@ -62,7 +62,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 
             return false;
         end
-
+		
         autoLoadObject.CheckTypeMethod = CheckType
         autoLoadObject.sizeX = 0.96
         autoLoadObject.sizeY = 0.36
@@ -127,11 +127,11 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 
             return false;
         end
-
+		
         autoLoadObject.CheckTypeMethod = CheckType
-        autoLoadObject.sizeX = 0.57
-        autoLoadObject.sizeY = 0.14
-        autoLoadObject.sizeZ = 1.03
+        autoLoadObject.sizeX = 0.75
+        autoLoadObject.sizeY = 0.45
+        autoLoadObject.sizeZ = 0.5
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
     elseif (name == "hb_flourSack") then
@@ -226,12 +226,21 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.8
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
-    elseif (name == "hb_bigBag") then
+   elseif (name == "hb_bigBag") then
         local function CheckType(object)
-            if string.find(object.i3dFilename, "FS22_HofBergmann/objects/bigBag/bigBag.i3d") then return true end
-            
-            return false;
-        end
+			if object.configFileName ~= nil and string.find(object.configFileName, "/bigBag/") then return true end
+
+			if object.i3dMappings == nil then
+				return false;
+			end
+
+			for mappingName, _ in pairs(object.i3dMappings) do
+				if (mappingName == "bigBag_vis") then
+				return true;
+				end
+			end
+			return false;
+		end
 
         autoLoadObject.CheckTypeMethod = CheckType
         autoLoadObject.sizeX = 1.35
@@ -277,13 +286,106 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 
         autoLoadObject.CheckTypeMethod = CheckType
         autoLoadObject.sizeX = 1.21
-        autoLoadObject.sizeY = 0.80
+        autoLoadObject.sizeY = 0.8
         autoLoadObject.sizeZ = 0.81
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
-    end
-end
+    elseif (name == "hb_meatBox") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "beefMeatBox.xml") then return true end
+            if string.find(object.configFileName, "porkMeatBox.xml") then return true end
+            if string.find(object.configFileName, "poultryMeatBox.xml") then return true end
+            if string.find(object.configFileName, "sheepGoatMeatBox.xml") then return true end
 
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.5
+        autoLoadObject.sizeY = 0.24
+        autoLoadObject.sizeZ = 0.72
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)		
+    elseif (name == "hb_maltSack") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "maltSack.xml") then return true end
+
+            return false;
+        end
+				
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.57
+        autoLoadObject.sizeY = 0.14
+        autoLoadObject.sizeZ = 1.03
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_fixFermActiveContainer") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "fixFermActiveContainer.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 1.5
+        autoLoadObject.sizeY = 1.5
+        autoLoadObject.sizeZ = 1.3
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_breadbox") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "breadBox.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.61
+        autoLoadObject.sizeY = 0.29
+        autoLoadObject.sizeZ = 0.42
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_liquidYeastCanister") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "liquidYeastCanister.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.17
+        autoLoadObject.sizeY = 0.36
+        autoLoadObject.sizeZ = 0.23
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+    elseif (name == "hb_hopsBale") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "hopsBale.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.82
+        autoLoadObject.sizeY = 0.1
+        autoLoadObject.sizeZ = 1.12
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)       
+    elseif (name == "hb_beerCrate") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "beerCrate.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.41
+        autoLoadObject.sizeY = 0.31
+        autoLoadObject.sizeZ = 0.55
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)        
+ 		end
+end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
 
 
@@ -314,8 +416,15 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_fillablePallet");
     table.insert(types, "hb_bigBox");
     table.insert(types, "hb_fillableAppleBox");
+	table.insert(types, "hb_maltSack");
+	table.insert(types, "hb_meatBox");
+    table.insert(types, "hb_fixFermActiveContainer");	
+    table.insert(types, "hb_breadbox");	
+    table.insert(types, "hb_liquidYeastCanister");
+    table.insert(types, "hb_hopsBale");	
+    table.insert(types, "hb_beerCrate");		
     
-    return types;
+	return types;
 end
 
 FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList, AutoloaderExtensionHofBergmann.CreateAvailableTypeList)

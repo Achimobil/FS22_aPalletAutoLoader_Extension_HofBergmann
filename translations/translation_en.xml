@@ -8,9 +8,9 @@
         <text name="aPalletAutoLoader_hb_cheese" text="HB - Cheese" />
         <text name="aPalletAutoLoader_hb_goatcheese" text="HB - Goat Cheese" />
         <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Egg Box" />
-        <text name="aPalletAutoLoader_hb_eggBox" text="HB - Eggs" />
+        <text name="aPalletAutoLoader_hb_eggBox" text="HB - Eggbox" />
         <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Fertilizer Bag" />
-        <text name="aPalletAutoLoader_hb_flourSack" text="HB - flour bag" />
+	    <text name="aPalletAutoLoader_hb_flourSack" text="HB - flour bag" />
         <text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
         <text name="aPalletAutoLoader_hb_onionSack" text="HB - Onion Bag" />
         <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Strawberry Box" />
@@ -20,6 +20,14 @@
         <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Fillable pallet" />
         <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Fillable Apple Pallet" />
-    </texts>
+		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Fillable Apple Pallet" />
+   		<text name="aPalletAutoLoader_hb_maltSack" text="HB - Maltsack" />        
+		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Meatboxes" />
+		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC" />	
+		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Breadbox" />		
+        <text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - LiquidyeastCanister" />
+        <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopsbale" />	
+        <text name="aPalletAutoLoader_hb_beerCrate" text="HB - Beer Cratee" />			
+
+		</texts>
 </l10n>
