@@ -49,10 +49,11 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 						
         autoLoadObject.CheckTypeMethod = CheckType
         autoLoadObject.sizeX = 0.37
-        autoLoadObject.sizeY = 0.37
+        autoLoadObject.sizeY = 0.365
         autoLoadObject.sizeZ = 0.55
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_cardboard") then
         local function CheckType(object)
             if string.find(object.configFileName, "cauliflowerBox.xml") then return true end
@@ -69,6 +70,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.64
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_cheese") then
         local function CheckType(object)
             if string.find(object.configFileName, "cheese/cheese.xml") then return true end
@@ -82,6 +84,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.62
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_goatcheese") then
         local function CheckType(object)
             if string.find(object.configFileName, "cheese/goatcheese.xml") then return true end
@@ -95,6 +98,8 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.51
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
+		autoLoadObject.LoadHeightOffset = 0.085
     elseif (name == "hb_eggWoodBox") then
         local function CheckType(object)
             if string.find(object.configFileName, "eggWoodBox.xml") then return true end
@@ -129,11 +134,12 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         end
 		
         autoLoadObject.CheckTypeMethod = CheckType
-        autoLoadObject.sizeX = 0.75
-        autoLoadObject.sizeY = 0.45
-        autoLoadObject.sizeZ = 0.5
+        autoLoadObject.sizeX = 0.56
+        autoLoadObject.sizeY = 0.20
+        autoLoadObject.sizeZ = 1.02
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_flourSack") then
         local function CheckType(object)
             if string.find(object.configFileName, "flourSack.xml") then return true end
@@ -147,6 +153,8 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 1.06
         autoLoadObject.type = "bigBag"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
+		autoLoadObject.stackable = false;
     elseif (name == "hb_europallet") then
         local function CheckType(object)
             if string.find(object.configFileName, "grapeJuicePallet.xml") then return true end
@@ -174,6 +182,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.58
         autoLoadObject.type = "bigBag"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_strawberriesBox") then
         local function CheckType(object)
             if string.find(object.configFileName, "strawberriesBox.xml") then return true end
@@ -187,6 +196,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.76
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_wineCrate") then
         local function CheckType(object)
             if string.find(object.configFileName, "wineCrate.xml") then return true end
@@ -200,6 +210,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.5
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_woodBasketGrapes") then
         local function CheckType(object)
             if string.find(object.configFileName, "woodBasketGrapes.xml") then return true end
@@ -226,6 +237,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.8
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
    elseif (name == "hb_bigBag") then
         local function CheckType(object)
 			if object.configFileName ~= nil and string.find(object.configFileName, "/bigBag/") then return true end
@@ -248,6 +260,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 1.15
         autoLoadObject.type = "bigBag"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_fillablePallet") then
         local function CheckType(object)
             if string.find(object.i3dFilename, "fillablePallet.i3d") then return true end
@@ -319,6 +332,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 1.03
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_fixFermActiveContainer") then
         local function CheckType(object)
             if string.find(object.configFileName, "fixFermActiveContainer.xml") then return true end
@@ -345,6 +359,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.42
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_liquidYeastCanister") then
         local function CheckType(object)
             if string.find(object.configFileName, "liquidYeastCanister.xml") then return true end
@@ -358,6 +373,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.23
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
     elseif (name == "hb_hopsBale") then
         local function CheckType(object)
             if string.find(object.configFileName, "hopsBale.xml") then return true end
@@ -366,11 +382,12 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         end
 
         autoLoadObject.CheckTypeMethod = CheckType
-        autoLoadObject.sizeX = 0.82
-        autoLoadObject.sizeY = 0.1
+        autoLoadObject.sizeX = 0.81
+        autoLoadObject.sizeY = 0.8
         autoLoadObject.sizeZ = 1.12
         autoLoadObject.type = "pallet"
-        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)       
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)  
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;     
     elseif (name == "hb_beerCrate") then
         local function CheckType(object)
             if string.find(object.configFileName, "beerCrate.xml") then return true end
@@ -383,8 +400,9 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeY = 0.31
         autoLoadObject.sizeZ = 0.55
         autoLoadObject.type = "pallet"
-        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)        
- 		end
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;  
+	end
 end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
 
@@ -422,7 +440,7 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_breadbox");	
     table.insert(types, "hb_liquidYeastCanister");
     table.insert(types, "hb_hopsBale");	
-    table.insert(types, "hb_beerCrate");		
+    table.insert(types, "hb_beerCrate");
     
 	return types;
 end
