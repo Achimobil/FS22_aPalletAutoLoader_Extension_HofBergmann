@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="67">
-    <author>Maverick1305</author>
-    <version>0.3.0.1</version>
+<modDesc descVersion="75">
+    <author>Maverick1305/Achimobil</author>
+    <version>0.3.1.0</version>
     <title>
         <de>Hof Bergmann AL Erweiterung</de>
         <en>Hof Bergmann AL Extension</en>
@@ -12,7 +12,12 @@
 
 Somit kann jeder Trailer der die Paletten Autoloader Spezialisierung von Achimobil verwendet auf der Hof Bergmann verwendet werden.
 
-Erfordert die Paletten Autoloader Spezialisierung ab Version 1.8.5.0
+Erfordert die Paletten Autoloader Spezialisierung ab Version 1.10.1.0
+
+Changelog:
+0.3.1.0
+- Anpassungen an AL Version 1.10.1.0
+
 ]]>
         </de>
         <en>
@@ -20,7 +25,12 @@ Erfordert die Paletten Autoloader Spezialisierung ab Version 1.8.5.0
 
 This means that any trailer that uses the pallet autoloader specialisation by Achimobil can be used on the Hof Bergmann.
 
-Requires the Pallet Autoloader Specialisation as of version 1.8.5.0
+Requires the Pallet Autoloader Specialisation as of version 1.10.1.0
+
+Changelog:
+0.3.1.0
+- Changes for AL Version 1.10.1.0
+
 ]]>
         </en>
     </description>
