@@ -28,6 +28,8 @@
         <text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Brauhefe" />
         <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen" />	
 	    <text name="aPalletAutoLoader_hb_beerCrate" text="HB - Bierkisten" />
+	    <text name="aPalletAutoLoader_hb_catFoodPallet" text="HB - Katzenfutter" />
+	    <text name="aPalletAutoLoader_hb_petCarrier" text="HB - Haustier Tragebox" />
 			
     </texts>
 </l10n>

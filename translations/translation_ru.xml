@@ -21,5 +21,7 @@
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - заполняемый поддон" />
         <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
         <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - заполняемый яблочный поддон" />
+	    <text name="aPalletAutoLoader_hb_catFoodPallet" text="HB - cat food pallet" />
+	    <text name="aPalletAutoLoader_hb_petCarrier" text="HB - Pet Carrying Box" />	
     </texts>
 </l10n>

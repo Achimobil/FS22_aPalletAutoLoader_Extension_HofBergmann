@@ -401,6 +401,34 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.sizeZ = 0.55
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;     
+    elseif (name == "hb_catFoodPallet") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "catFoodPallet.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.6
+        autoLoadObject.sizeY = 0.15
+        autoLoadObject.sizeZ = 0.41
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE; 
+    elseif (name == "hb_petCarrier") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "petCarrier.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.98
+        autoLoadObject.sizeY = 0.6
+        autoLoadObject.sizeZ = 0.69
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
 		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;  
 	end
 end
@@ -441,8 +469,29 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_liquidYeastCanister");
     table.insert(types, "hb_hopsBale");	
     table.insert(types, "hb_beerCrate");
+    table.insert(types, "hb_catFoodPallet");
+    table.insert(types, "hb_petCarrier");
     
 	return types;
 end
 
 FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList, AutoloaderExtensionHofBergmann.CreateAvailableTypeList)
+
+function AutoloaderExtensionHofBergmann:getIsValidObject(superFunc, object)
+-- print("AutoloaderExtensionHofBergmann:getIsValidObject");
+	local result = superFunc(self, object);
+	-- print(string.format("result: %s", result));
+	if result == false then
+		local objectFilename = object.configFileName or object.i3dFilename;
+		-- print(string.format("objectFilename: %s", objectFilename));
+		if objectFilename ~= nil then
+			-- print(string.format("object.typeName: %s", object.typeName));
+			if object.typeName == "FS22_HofBergmann.livestockBox" then
+				result = true;
+			end
+		end
+	end
+	-- print(string.format("result: %s", result));
+	return result;
+end
+FS22_aPalletAutoLoader.APalletAutoLoader.getIsValidObject = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.getIsValidObject, AutoloaderExtensionHofBergmann.getIsValidObject)
