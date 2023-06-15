@@ -21,7 +21,5 @@
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Pallet rellenable" />
         <text name="aPalletAutoLoader_hb_bigBox" text="HB - Caja grande" />
         <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Paleta de manzana rellenable" />
-	    <text name="aPalletAutoLoader_hb_catFoodPallet" text="HB - cat food pallet" />
-	    <text name="aPalletAutoLoader_hb_petCarrier" text="HB - Pet Carrying Box" />	
     </texts>
 </l10n>

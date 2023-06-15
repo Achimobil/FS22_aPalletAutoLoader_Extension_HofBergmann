@@ -27,9 +27,7 @@
 		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Breadbox" />		
         <text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - LiquidyeastCanister" />
         <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopsbale" />	
-        <text name="aPalletAutoLoader_hb_beerCrate" text="HB - Beer Cratee" />	
-	    <text name="aPalletAutoLoader_hb_catFoodPallet" text="HB - cat food pallet" />
-	    <text name="aPalletAutoLoader_hb_petCarrier" text="HB - Pet Carrying Box" />		
+        <text name="aPalletAutoLoader_hb_beerCrate" text="HB - Beer Cratee" />
 
 		</texts>
 </l10n>
