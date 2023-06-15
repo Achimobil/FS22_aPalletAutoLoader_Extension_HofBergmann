@@ -430,6 +430,35 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
         autoLoadObject.type = "pallet"
         autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
 		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;  
+    elseif (name == "hb_poultryBox") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "poultryBox.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 1.31
+        autoLoadObject.sizeY = 0.32
+        autoLoadObject.sizeZ = 0.60
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;  
+    elseif (name == "hb_animalSack") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "animalSack.xml") then return true end
+            
+            return false;
+        end
+
+        autoLoadObject.CheckTypeMethod = CheckType
+        autoLoadObject.sizeX = 0.58
+        autoLoadObject.sizeY = 0.54
+        autoLoadObject.sizeZ = 0.32
+        autoLoadObject.type = "pallet"
+        autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;  
+		autoLoadObject.stackable = false;
 	end
 end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
@@ -471,6 +500,8 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_beerCrate");
     table.insert(types, "hb_catFoodPallet");
     table.insert(types, "hb_petCarrier");
+    table.insert(types, "hb_poultryBox");
+    table.insert(types, "hb_animalSack");
     
 	return types;
 end
