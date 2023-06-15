@@ -465,18 +465,33 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
             
             return false;
         end
-
         autoLoadObject.CheckTypeMethod = CheckType
-        autoLoadObject.sizeX = 0.47
-        autoLoadObject.sizeY = 0.17
-        autoLoadObject.sizeZ = 0.7
-        autoLoadObject.type = "pallet"
-        autoLoadObject.nameTranslated = "HB - " .. g_i18n:getText("shopItem_fishBoxFillable", "FS22_HofBergmann")
-		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.47, 0.17, 0.7, "pallet", "shopItem_fishBoxFillable", true, true)
+    elseif (name == "hb_fishBox") then
+        local function CheckType(object)
+            if string.find(object.configFileName, "fishBox.xml") then return true end
+            
+            return false;
+        end
+        autoLoadObject.CheckTypeMethod = CheckType
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.75, 0.48, 0.69, "pallet", "shopItem_fishBox", true, true)
 	end
 end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
 
+function AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, sizeX, sizeY, sizeZ, type, shopName, withVehicleTrigger, stackable)
+        autoLoadObject.sizeX = sizeX
+        autoLoadObject.sizeY = sizeY
+        autoLoadObject.sizeZ = sizeZ
+        autoLoadObject.type = type
+        autoLoadObject.nameTranslated = "HB - " .. g_i18n:getText(shopName, "FS22_HofBergmann")
+		if withVehicleTrigger then
+			autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
+		end
+		autoLoadObject.stackable = stackable;
+end
 
 
 function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
@@ -517,6 +532,7 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
     table.insert(types, "hb_poultryBox");
     table.insert(types, "hb_animalSack");
     table.insert(types, "hb_fishBoxFillable");
+    table.insert(types, "hb_fishBox");
     
 	return types;
 end
