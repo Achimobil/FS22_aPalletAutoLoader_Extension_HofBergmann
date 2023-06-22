@@ -479,15 +479,6 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		autoLoadObject.CheckTypeMethod = CheckType
 
 		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.75, 0.48, 0.69, "pallet", "shopItem_fishBox", true, true)
-	elseif (name == "hb_eggWoodBox") then
-		local function CheckType(object)
-			if string.find(object.configFileName, "eggWoodBox.xml") then return true end
-			
-			return false;
-		end
-		autoLoadObject.CheckTypeMethod = CheckType
-
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.74, 0.16, 0.5, "pallet", "fillType_egg", true, true)
 	end
 end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
@@ -544,7 +535,6 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	table.insert(types, "hb_animalSack");
 	table.insert(types, "hb_fishBoxFillable");
 	table.insert(types, "hb_fishBox");
-	table.insert(types, "hb_eggWoodBox");
 	
 	return types;
 end
