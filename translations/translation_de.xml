@@ -2,7 +2,7 @@
 <l10n>
     <translationContributors>Achimobil</translationContributors>
     <texts>
-        <text name="aPalletAutoLoader_hb_woodbox" text="HB - Holzkiste" />
+        <text name="aPalletAutoLoader_hb_woodbox" text="HB - Apfelkiste (klein)" />
         <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - Karton" />
         <text name="aPalletAutoLoader_hb_cardboard" text="HB - Gemüsekiste" />
         <text name="aPalletAutoLoader_hb_cheese" text="HB - Käse" />

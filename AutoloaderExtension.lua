@@ -29,7 +29,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 	-- add check method and size for every additional type
 	if (name == "hb_woodbox") then
 		local function CheckType(object)
-			if string.find(object.configFileName, "appleBox/appleBox.xml") then return true end
+			if string.find(object.configFileName, "fillableAppleBoxSmall/fillableAppleBoxSmall.xml") then return true end
 
 			return false;
 		end
@@ -49,7 +49,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 						
 		autoLoadObject.CheckTypeMethod = CheckType
 		autoLoadObject.sizeX = 0.37
-		autoLoadObject.sizeY = 0.365
+		autoLoadObject.sizeY = 0.37
 		autoLoadObject.sizeZ = 0.55
 		autoLoadObject.type = "pallet"
 		autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
@@ -126,6 +126,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		autoLoadObject.sizeZ = 0.5
 		autoLoadObject.type = "pallet"
 		autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
+		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
 	elseif (name == "hb_fertilizerBag") then
 		local function CheckType(object)
 			if string.find(object.configFileName, "fertilizerBag.xml") then return true end
