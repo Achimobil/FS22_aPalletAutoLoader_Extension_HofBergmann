@@ -397,14 +397,9 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			
 			return false;
 		end
-
 		autoLoadObject.CheckTypeMethod = CheckType
-		autoLoadObject.sizeX = 0.41
-		autoLoadObject.sizeY = 0.31
-		autoLoadObject.sizeZ = 0.55
-		autoLoadObject.type = "pallet"
-		autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name) 
-		autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;	 
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.41, 0.31, 0.55, "pallet", "storeItem_beerCrate", true, true)
 	elseif (name == "hb_catFoodPallet") then
 		local function CheckType(object)
 			if string.find(object.configFileName, "catFoodPallet.xml") then return true end

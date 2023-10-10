@@ -26,8 +26,6 @@
 		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC" />	
 		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Brotkiste" />		
         <text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Brauhefe" />
-        <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen" />	
-	    <text name="aPalletAutoLoader_hb_beerCrate" text="HB - Bierkisten" />
-			
+        <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen" />
     </texts>
 </l10n>

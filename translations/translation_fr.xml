@@ -27,6 +27,5 @@
 		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm Active"/>
 		<text name="aPalletAutoLoader_hb_breadbox" text="HB - boîte à pain"/>
 		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Sac De Houblon"/>
-		<text name="aPalletAutoLoader_hb_beerCrate" text="HB - Caisse à bière"/>
 	</texts>
 </l10n>
