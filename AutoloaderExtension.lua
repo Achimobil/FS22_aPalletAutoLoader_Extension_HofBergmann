@@ -502,7 +502,45 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		autoLoadObject.CheckTypeMethod = CheckType
 
 		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.77, 0.46, 0.56, "pallet", "shopItem_fillableHoneyBox", true, false)
+	elseif (name == "hb_animalSkinPallet") then
+		local function CheckType(object)
+			if string.find(object.configFileName, "animalSkinPallet") then return true end
+			
+			return false;
+		end
+		autoLoadObject.CheckTypeMethod = CheckType
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.6, 0.8, 1.1, "pallet", "storeItem_animalSkinPallet", true, false)
+	elseif (name == "hb_fillableAnimalSkinBox") then
+		local function CheckType(object)
+			if string.find(object.configFileName, "fillableAnimalSkinBox") then return true end
+			
+			return false;
+		end
+		autoLoadObject.CheckTypeMethod = CheckType
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.2, 0.88, 1.2, "pallet", "shopItem_fillableAnimalSkinBox", false, true)
+	elseif (name == "euroPallet") then
+		-- Extend check methods of default
+		autoLoadObject.CheckTypeMethod = Utils.overwrittenFunction(autoLoadObject.CheckTypeMethod, function (object, superFunc)
+			-- print(string.format("CheckTypeMethod: %s,%s", object, superFunc));
+			if object.configFileName ~= nil and string.find(object.configFileName, "whitelimePallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "animalSkinPallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "tanneryMixPallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "leatherPallet") then return false end
+			return superFunc(object);
+		end)
+	elseif (name == "euroPalletOversize") then
+		-- Extend check methods of default
+		autoLoadObject.CheckTypeMethod = Utils.overwrittenFunction(autoLoadObject.CheckTypeMethod, function (object, superFunc)
+			-- print(string.format("CheckTypeMethod: %s,%s", object, superFunc));
+			if object.configFileName ~= nil and string.find(object.configFileName, "whitelimePallet") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "tanneryMixPallet") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "leatherPallet") then return true end
+			return superFunc(object);
+		end)
 	end
+	
 end
 FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
 
@@ -561,6 +599,8 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	table.insert(types, "hb_milkCan");
 	table.insert(types, "hb_honeyBox");
 	table.insert(types, "hb_fillableHoneyBox");
+	table.insert(types, "hb_animalSkinPallet");
+	table.insert(types, "hb_fillableAnimalSkinBox");
 	
 	return types;
 end
