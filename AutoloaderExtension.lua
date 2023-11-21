@@ -207,7 +207,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 
 		autoLoadObject.CheckTypeMethod = CheckType
 		autoLoadObject.sizeX = 0.74
-		autoLoadObject.sizeY = 0.5
+		autoLoadObject.sizeY = 0.52
 		autoLoadObject.sizeZ = 0.5
 		autoLoadObject.type = "pallet"
 		autoLoadObject.nameTranslated = g_i18n:getText("aPalletAutoLoader_" .. name)
