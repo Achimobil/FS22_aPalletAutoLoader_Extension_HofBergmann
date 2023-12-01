@@ -60,6 +60,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			if string.find(object.configFileName, "cucumberBox.xml") then return true end
 			if string.find(object.configFileName, "lettuceBox.xml") then return true end
 			if string.find(object.configFileName, "tomatoesBox.xml") then return true end
+			if string.find(object.configFileName, "carrotBox.xml") then return true end
 
 			return false;
 		end
