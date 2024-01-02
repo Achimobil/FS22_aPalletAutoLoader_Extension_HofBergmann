@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
-    <translationContributors>Achimobil</translationContributors>
-    <texts>
-        <text name="aPalletAutoLoader_hb_woodbox" text="HB - Apfelkiste (klein)" />
-        <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - Karton" />
-        <text name="aPalletAutoLoader_hb_cardboard" text="HB - Gemüsekiste" />
-        <text name="aPalletAutoLoader_hb_cheese" text="HB - Käse" />
-        <text name="aPalletAutoLoader_hb_goatcheese" text="HB - Ziegenkäse" />
-        <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Eierkiste" />
-        <text name="aPalletAutoLoader_hb_eggBox" text="HB - Eierkartons" />
-        <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Düngersack" />
-        <text name="aPalletAutoLoader_hb_flourSack" text="HB - Mehlsack" />
-        <text name="aPalletAutoLoader_hb_europallet" text="HB - Europalette" />
-        <text name="aPalletAutoLoader_hb_onionSack" text="HB - Zwiebelsack" />
-        <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Erdbeerkiste" />
-        <text name="aPalletAutoLoader_hb_wineCrate" text="HB - Weinkiste" />
-        <text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Weintraubenkorb" />
-        <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wollbündel" />
-        <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
-        <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Füllbare Palette" />
-        <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Füllbare Apfelpalette" />
-		<text name="aPalletAutoLoader_hb_maltSack" text="HB - Malzsack" />        
-		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Fleischbox" />
-		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC" />	
-		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Brotkiste" />		
-        <text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Brauhefe" />
-        <text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen" />
-    </texts>
+	<translationContributors>Achimobil</translationContributors>
+	<texts>
+		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Apfelkiste (klein)"/>
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - Karton"/>
+		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Gemüsekiste"/>
+		<text name="aPalletAutoLoader_hb_cheese" text="HB - Käse"/>
+		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - Ziegenkäse"/>
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Eierkiste"/>
+		<text name="aPalletAutoLoader_hb_eggBox" text="HB - Eierkartons"/>
+		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Düngersack"/>
+		<text name="aPalletAutoLoader_hb_flourSack" text="HB - Mehlsack"/>
+		<text name="aPalletAutoLoader_hb_europallet" text="HB - Europalette"/>
+		<text name="aPalletAutoLoader_hb_onionSack" text="HB - Zwiebelsack"/>
+		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Erdbeerkiste"/>
+		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Weinkiste"/>
+		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Weintraubenkorb"/>
+		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wollbündel"/>
+		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag"/>
+		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Füllbare Palette"/>
+		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box"/>
+		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Füllbare Apfelpalette"/>
+		<text name="aPalletAutoLoader_hb_maltSack" text="HB - Malzsack"/>
+		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Fleischbox"/>
+		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC"/>
+		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Brotkiste"/>
+		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Brauhefe"/>
+		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen"/>
+	</texts>
 </l10n>
