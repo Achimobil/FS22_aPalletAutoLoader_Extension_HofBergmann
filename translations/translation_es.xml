@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
-    <translationContributors>Achimobil</translationContributors>
+    <translationContributors>Achimobil / BARdTOLO</translationContributors>
     <texts>
         <text name="aPalletAutoLoader_hb_woodbox" text="HB - Caja de madera" />
         <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - caja de cartón" />
@@ -10,7 +10,7 @@
         <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Caja de huevos" />
         <text name="aPalletAutoLoader_hb_eggBox" text="HB - Huevos" />
         <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Bolsa de fertilizante" />
-        <text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
+        <text name="aPalletAutoLoader_hb_flourSack" text="HB - Saco de harina" />
         <text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
         <text name="aPalletAutoLoader_hb_onionSack" text="HB - Bolsa de cebollas" />
         <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Caja de fresas" />
@@ -21,5 +21,11 @@
         <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Pallet rellenable" />
         <text name="aPalletAutoLoader_hb_bigBox" text="HB - Caja grande" />
         <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Paleta de manzana rellenable" />
+		<text name="aPalletAutoLoader_hb_maltSack" text="HB - Saco de malta"/>
+		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Caja de carne"/>
+		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC"/>
+		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Caja de pan"/>
+		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Bote de levadura líquida"/>
+		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Fardo de lúpulo"/>
     </texts>
 </l10n>
