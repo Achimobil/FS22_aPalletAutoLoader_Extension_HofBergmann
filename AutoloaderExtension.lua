@@ -381,6 +381,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 	elseif (name == "hb_hopsBale") then
 		local function CheckType(object)
 			if string.find(object.configFileName, "hopsBale.xml") then return true end
+			if string.find(object.configFileName, "hopsBale_empty.xml") then return true end
 			
 			return false;
 		end
