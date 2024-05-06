@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="79">
     <author>Maverick1305/Achimobil</author>
-    <version>0.4.0.4</version>
+    <version>0.4.0.5</version>
     <title>
         <de>Hof Bergmann AL Erweiterung</de>
         <en>Hof Bergmann AL Extension</en>
@@ -15,6 +15,7 @@ Somit kann jeder Trailer der die Paletten Autoloader Spezialisierung von Achimob
 Erfordert die Paletten Autoloader Spezialisierung ab Version 1.10.1.0
 
 Changelog:
+0.4.0.5 - Verschiedene neue Paletten der 1.4 hinzugefügt
 0.4.0.4 - Hopfen Produktionpallen erkennung eingefügt
 0.4.0.3 - ES übersetzungen von BARdTOLO eingefügt
 0.4.0.2 - Verbesserte CT Übersetzungen

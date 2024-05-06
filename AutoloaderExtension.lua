@@ -522,6 +522,24 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		autoLoadObject.CheckTypeMethod = CheckType
 
 		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.2, 0.88, 1.2, "pallet", "shopItem_fillableAnimalSkinBox", false, true)
+	elseif (name == "hb_cryoBarrel") then
+		local function CheckType(object)
+			if string.find(object.configFileName, "cryoBarrel") then return true end
+			
+			return false;
+		end
+		autoLoadObject.CheckTypeMethod = CheckType
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.32, 0.48, 0.32, "pallet", "storeItem_cryoBarrel", false, true)
+	elseif (name == "hb_pulletMeatBox") then
+		local function CheckType(object)
+			if string.find(object.configFileName, "pulletMeatBox") then return true end
+			
+			return false;
+		end
+		autoLoadObject.CheckTypeMethod = CheckType
+
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.66, 0.3, 0.98, "pallet", "storeItem_meatBox", false, true)
 	elseif (name == "euroPallet") then
 		-- Extend check methods of default
 		autoLoadObject.CheckTypeMethod = Utils.overwrittenFunction(autoLoadObject.CheckTypeMethod, function (object, superFunc)
@@ -530,6 +548,8 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			if object.configFileName ~= nil and string.find(object.configFileName, "animalSkinPallet") then return false end
 			if object.configFileName ~= nil and string.find(object.configFileName, "tanneryMixPallet") then return false end
 			if object.configFileName ~= nil and string.find(object.configFileName, "leatherPallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "eggBoxPallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "meatPallets") then return false end
 			return superFunc(object);
 		end)
 	elseif (name == "euroPalletOversize") then
@@ -603,6 +623,8 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	table.insert(types, "hb_fillableHoneyBox");
 	table.insert(types, "hb_animalSkinPallet");
 	table.insert(types, "hb_fillableAnimalSkinBox");
+	table.insert(types, "hb_cryoBarrel");
+	table.insert(types, "hb_pulletMeatBox");
 	
 	return types;
 end
