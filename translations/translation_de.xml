@@ -2,7 +2,7 @@
 <l10n>
 	<translationContributors>Achimobil</translationContributors>
 	<texts>
-		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Apfelkiste (klein)"/>
+		<text name="aPalletAutoLoader_hb_woodbox" text="HB - füllbare Obstkiste (klein)"/>
 		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - Karton"/>
 		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Gemüsekiste"/>
 		<text name="aPalletAutoLoader_hb_cheese" text="HB - Käse"/>
@@ -21,11 +21,14 @@
 		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Füllbare Palette"/>
 		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box"/>
 		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Füllbare Apfelpalette"/>
-		<text name="aPalletAutoLoader_hb_maltSack" text="HB - Malzsack"/>
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Papiersack Ware"/>
 		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Fleischbox"/>
-		<text name="aPalletAutoLoader_hb_fixFermActiveContainer" text="HB - Fix Ferm IBC"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
 		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Brotkiste"/>
 		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Brauhefe"/>
 		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Hopfen"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Holzkiste mit Gläsern"/>
+		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Apfelwein-Fass"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Grillhähnchen-Box (roh)"/>		
 	</texts>
 </l10n>

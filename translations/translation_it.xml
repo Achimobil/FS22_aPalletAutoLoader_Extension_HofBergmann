@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
-    <translationContributors>Achimobil</translationContributors>
-    <texts>
-        <text name="aPalletAutoLoader_hb_woodbox" text="HB - Cassa di legno" />
-        <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - scatola di cartone" />
-        <text name="aPalletAutoLoader_hb_cardboard" text="HB - Cassa di verdura" />
-        <text name="aPalletAutoLoader_hb_cheese" text="HB - Cheese" />
-        <text name="aPalletAutoLoader_hb_goatcheese" text="HB - Formaggio di capra" />
-        <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Egg Box" />
-        <text name="aPalletAutoLoader_hb_eggBox" text="HB - Eggs" />
-        <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Sacco per fertilizzante" />
-        <text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
-        <text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
-        <text name="aPalletAutoLoader_hb_onionSack" text="HB - Sacco di cipolle" />
-        <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Scatola di fragole" />
-        <text name="aPalletAutoLoader_hb_wineCrate" text="HB - Cassa di vino" />
-        <text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Cesto per uva da vino" />
-        <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Bundle di lana" />
-        <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
-        <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Pallet riempibile" />
-        <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Pallet di mele riempibile" />
-    </texts>
+	<translationContributors>Achimobil</translationContributors>
+	<texts>
+		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Cassetta frutta riempibile piccola" />
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - scatola di cartone" />
+		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Cassa di verdura" />
+		<text name="aPalletAutoLoader_hb_cheese" text="HB - Cheese" />
+		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - Formaggio di capra" />
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Egg Box" />
+		<text name="aPalletAutoLoader_hb_eggBox" text="HB - Eggs" />
+		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Sacco per fertilizzante" />
+		<text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
+		<text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
+		<text name="aPalletAutoLoader_hb_onionSack" text="HB - Sacco di cipolle" />
+		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Scatola di fragole" />
+		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Cassa di vino" />
+		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Cesto per uva da vino" />
+		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Bundle di lana" />
+		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
+		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Pallet riempibile" />
+		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
+		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Pallet di mele riempibile" />
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Articoli in sacchetti di carta"/>
+		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Scatola di carne"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
+		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Scatola per il pane"/>
+		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Lievito di birra"/>
+		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - luppolo"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Scatola in legno con bicchieri"/>
+		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Barile di sidro"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Scatola con pollo (crudo)"/>		
+	</texts>
 </l10n>

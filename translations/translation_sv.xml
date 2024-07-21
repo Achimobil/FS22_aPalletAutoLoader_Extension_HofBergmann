@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
-    <translationContributors>Achimobil</translationContributors>
-    <texts>
-        <text name="aPalletAutoLoader_hb_woodbox" text="HB - Trälåda" />
-        <text name="aPalletAutoLoader_hb_closedCardboard" text="HB - kartong" />
-        <text name="aPalletAutoLoader_hb_cardboard" text="HB - Grönsakslåda" />
-        <text name="aPalletAutoLoader_hb_cheese" text="HB - ost" />
-        <text name="aPalletAutoLoader_hb_goatcheese" text="HB - getost" />
-        <text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Egg Box" />
-        <text name="aPalletAutoLoader_hb_eggBox" text="HB - Ägg" />
-        <text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Gödselpåse" />
-        <text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
-        <text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
-        <text name="aPalletAutoLoader_hb_onionSack" text="HB - Lökpåse" />
-        <text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Jordgubbsbox" />
-        <text name="aPalletAutoLoader_hb_wineCrate" text="HB - Vinlåda" />
-        <text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Korg med vindruvor" />
-        <text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wool Bundle" />
-        <text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
-        <text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Fyllbar pall" />
-        <text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-        <text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Fyllbar äppelpalett" />
-    </texts>
+	<translationContributors>Achimobil</translationContributors>
+	<texts>
+		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Fyllbar fruktlåda liten" />
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - kartong" />
+		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Grönsakslåda" />
+		<text name="aPalletAutoLoader_hb_cheese" text="HB - ost" />
+		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - getost" />
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Trälåda med ägg" />
+		<text name="aPalletAutoLoader_hb_eggBox" text="HB - Ägg" />
+		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Gödselpåse" />
+		<text name="aPalletAutoLoader_hb_flourSack" text="HB - Säck mjöl" />
+		<text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
+		<text name="aPalletAutoLoader_hb_onionSack" text="HB - Lökpåse" />
+		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Jordgubbsbox" />
+		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Vinlåda" />
+		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Korg med vindruvor" />
+		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Ullbuntar" />
+		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
+		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Fyllbar pall" />
+		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
+		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Fyllbar äppelpalett" />
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Produkter i papperspåsar"/>
+		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Köttlåda"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
+		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Brödlåda"/>
+		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Bryggjäst"/>
+		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - humleväxt"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Trälåda med glasögon"/>
+ 		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Träfat med cider"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Box med kyckling (rå)"/>		
+	</texts>
 </l10n>
