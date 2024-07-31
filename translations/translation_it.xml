@@ -2,33 +2,25 @@
 <l10n>
 	<translationContributors>Achimobil</translationContributors>
 	<texts>
-		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Cassetta frutta riempibile piccola" />
-		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - scatola di cartone" />
-		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Cassa di verdura" />
-		<text name="aPalletAutoLoader_hb_cheese" text="HB - Cheese" />
-		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - Formaggio di capra" />
-		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Egg Box" />
-		<text name="aPalletAutoLoader_hb_eggBox" text="HB - Eggs" />
-		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Sacco per fertilizzante" />
-		<text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
-		<text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
-		<text name="aPalletAutoLoader_hb_onionSack" text="HB - Sacco di cipolle" />
-		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Scatola di fragole" />
-		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Cassa di vino" />
-		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Cesto per uva da vino" />
-		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Bundle di lana" />
-		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
-		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Pallet riempibile" />
-		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Pallet di mele riempibile" />
-		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Articoli in sacchetti di carta"/>
-		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Scatola di carne"/>
-		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
-		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Scatola per il pane"/>
-		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Lievito di birra"/>
-		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - luppolo"/>
-		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Scatola in legno con bicchieri"/>
-		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Barile di sidro"/>
-		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Scatola con pollo (crudo)"/>		
+		<text name="aPalletAutoLoader_hb_woodbox" text="Cassetta frutta riempibile piccola" />
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="scatola di cartone" />
+		<text name="aPalletAutoLoader_hb_cardboard" text="Cassa di verdura" />
+		<text name="aPalletAutoLoader_hb_cheese" text="Cheese" />
+		<text name="aPalletAutoLoader_hb_goatcheese" text="Formaggio di capra" />
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="Egg Box" />
+		<!-- <text name="aPalletAutoLoader_hb_eggBox" text="Eggs" /> -->
+		<text name="aPalletAutoLoader_hb_wineCrate" text="Cassa di vino" />
+		<text name="aPalletAutoLoader_hb_roundwickerbaskets" text="Cestini rotondi di vimini" />
+		<text name="aPalletAutoLoader_hb_woolBundle" text="Bundle di lana" />
+		<text name="aPalletAutoLoader_hb_bigBag" text="Bigbag" />
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="Articoli in sacchetti di carta"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="IBC Tank"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="Scatola in legno con bicchieri"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="Scatola con pollo (crudo)"/>
+		<text name="aPalletAutoLoader_hb_greaseCan" text="Barattolo di grasso"/>
+		<text name="aPalletAutoLoader_hb_beveragepallet" text="Pallet in tetrapak"/>
+		<text name="aPalletAutoLoader_hb_eggBoxPallet" text="Pallet in cartone per uova"/>
+		<text name="aPalletAutoLoader_hb_vegetablePalett" text="Pallet con verdure"/>
+		<text name="aPalletAutoLoader_hb_strawberriesPallet" text="Tavolozza con fragole"/>
 	</texts>
 </l10n>

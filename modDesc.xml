@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="80">
     <author>Maverick1305/Achimobil/Horschd</author>
-    <version>0.5.0.0</version>
+    <version>0.5.1.0</version>
     <title>
         <de>Hof Bergmann AL Erweiterung</de>
         <en>Hof Bergmann AL Extension</en>
@@ -15,6 +15,20 @@ Somit kann jeder Trailer der die Paletten Autoloader Spezialisierung von Achimob
 Erfordert die Paletten Autoloader Spezialisierung ab Version 1.10.1.0
 
 Changelog:
+0.5.1.0 Horschd
+Neue separate Ladegüter
+- Hackschnitzel Sack
+- Schmierfett
+- Paulaner Spezi als "HB - Bierkasten"
+- füllbarer Apfelkorb als "HB - runder Transportkorb"
+- Grillhähnchen-Box als separate Ladegüter eingefügt
+Als separates Ladegut aber auch als Europalette ladbar:
+- Getränke-Paletten als "HB - Tetrapak-Palette"
+- Eier-Karton Paletten
+- Gemüse-Paletten (Gewächshauser)
+- Erdbeerbox Paletten
+- Pilzbox Paletten
+
 0.5.0.0 Horschd
 - Ladegüter der 1.5 eingefügt mit folgenden besonderheiten
 - IBC Tank lädt nun den FermFix und Pflanzenöl
@@ -48,6 +62,20 @@ This means that any trailer that uses the pallet autoloader specialisation by Ac
 Requires the Pallet Autoloader Specialisation as of version 1.10.1.0
 
 Changelog:
+0.5.1.0 Horschd
+New separate loads
+- Wood chip bag
+- Grease
+- Paulaner Spezi as ‘HB - beer crate’
+- Fillable apple basket as ‘HB - round transport basket’
+- Barbecue chicken box added as a separate load
+Can also be loaded as a separate load as a Euro pallet:
+- Beverage pallets as ‘HB - Tetrapak pallet’
+- Egg carton pallets
+- Vegetable pallets (greenhouse pallets)
+- Strawberry box pallets
+- Mushroom box pallets
+
 0.5.0.0 Horschd
 - Loads of the 1.5 added with the following special features
 - IBC tank now loads the FermFix and vegetable oil

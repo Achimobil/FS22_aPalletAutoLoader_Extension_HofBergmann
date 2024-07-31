@@ -2,33 +2,25 @@
 <l10n>
 	<translationContributors>Achimobil, Anthicz</translationContributors>
 	<texts>
-		<text name="aPalletAutoLoader_hb_woodbox" text="HB - Plnitelná krabička na ovoce malá"/>
-		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - Krabice másla"/>
-		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Bedna se zeleninou"/>
-		<text name="aPalletAutoLoader_hb_cheese" text="HB - Sýr"/>
-		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - Kozí sýr"/>
-		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Box na vejice"/>
-		<text name="aPalletAutoLoader_hb_eggBox" text="HB - Vejce"/>
-		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - Vak na hnojivo"/>
-		<text name="aPalletAutoLoader_hb_flourSack" text="HB - Pytel mouky"/>
-		<text name="aPalletAutoLoader_hb_europallet" text="HB - Euro paleta"/>
-		<text name="aPalletAutoLoader_hb_onionSack" text="HB - Pytel cibule"/>
-		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - Box s jahodama"/>
-		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Bedna na víno"/>
-		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Koš na víno"/>
-		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Balík vlny"/>
-		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag"/>
-		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - Plnitelná paleta"/>
-		<text name="aPalletAutoLoader_hb_bigBox" text="HB - BigBox"/>
-		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - Plnitelná jablečná paleta"/>
-		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Zboží papírových sáčků"/>
-		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Box na maso"/>
-		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
-		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Box s chlebem"/>
-		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Kanistr s kvasinkama"/>
-		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Chmelový balík"/>
-		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Dřevěná krabička se skleničkami"/>
-		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Sud jablečného moštu"/>
-		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Krabice s kuřecím masem (syrové)"/>
+		<text name="aPalletAutoLoader_hb_woodbox" text="Plnitelná krabička na ovoce malá"/>
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="Krabice másla"/>
+		<text name="aPalletAutoLoader_hb_cardboard" text="Bedna se zeleninou"/>
+		<text name="aPalletAutoLoader_hb_cheese" text="Sýr"/>
+		<text name="aPalletAutoLoader_hb_goatcheese" text="Kozí sýr"/>
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="Box na vejice"/>
+		<!-- <text name="aPalletAutoLoader_hb_eggBox" text="Vejce"/> -->
+		<text name="aPalletAutoLoader_hb_wineCrate" text="Bedna na víno"/>
+		<text name="aPalletAutoLoader_hb_roundwickerbaskets" text="kulaté proutěné koše"/>
+		<text name="aPalletAutoLoader_hb_woolBundle" text="Balík vlny"/>
+		<text name="aPalletAutoLoader_hb_bigBag" text="Bigbag"/>
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="Zboží papírových sáčků"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="IBC Tank"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="Dřevěná krabička se skleničkami"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="Krabice s kuřecím masem (syrové)"/>
+		<text name="aPalletAutoLoader_hb_greaseCan" text="Plechovka na tuk"/>
+		<text name="aPalletAutoLoader_hb_beveragepallet" text="Paleta Tetrapak"/>
+		<text name="aPalletAutoLoader_hb_eggBoxPallet" text="Paleta s krabicemi na vejce"/>
+		<text name="aPalletAutoLoader_hb_vegetablePalett" text="Paleta se zeleninou"/>
+		<text name="aPalletAutoLoader_hb_strawberriesPallet" text="Paleta s jahodami"/>
 	</texts>
 </l10n>

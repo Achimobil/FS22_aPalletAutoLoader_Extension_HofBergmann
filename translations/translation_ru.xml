@@ -2,33 +2,25 @@
 <l10n>
 	<translationContributors>Achimobil</translationContributors>.
 	<texts>
-		<text name="aPalletAutoLoader_hb_woodbox" text="HB - наполняемая коробка для фруктов, маленькая" />
-		<text name="aPalletAutoLoader_hb_closedCardboard" text="HB - картонная коробка" />
-		<text name="aPalletAutoLoader_hb_cardboard" text="HB - Овощной ящик" />
-		<text name="aPalletAutoLoader_hb_cheese" text="HB - Сыр" />
-		<text name="aPalletAutoLoader_hb_goatcheese" text="HB - Козий сыр" />
-		<text name="aPalletAutoLoader_hb_eggWoodBox" text="HB - Ящик для яиц" />
-		<text name="aPalletAutoLoader_hb_eggBox" text="HB - яйца" />
-		<text name="aPalletAutoLoader_hb_fertilizerBag" text="HB - мешок для удобрений" />
-		<text name="aPalletAutoLoader_hb_flourSack" text="HB - FlourSack" />
-		<text name="aPalletAutoLoader_hb_europallet" text="HB - Europallet" />
-		<text name="aPalletAutoLoader_hb_onionSack" text="HB - мешок для лука" />
-		<text name="aPalletAutoLoader_hb_strawberriesBox" text="HB - ящик клубники" />
-		<text name="aPalletAutoLoader_hb_wineCrate" text="HB - Винный ящик" />
-		<text name="aPalletAutoLoader_hb_woodBasketGrapes" text="HB - Корзина для винного винограда" />
-		<text name="aPalletAutoLoader_hb_woolBundle" text="HB - Wool Bundle" />
-		<text name="aPalletAutoLoader_hb_bigBag" text="HB - Bigbag" />
-		<text name="aPalletAutoLoader_hb_fillablePallet" text="HB - заполняемый поддон" />
-		<text name="aPalletAutoLoader_hb_bigBox" text="HB - Big Box" />
-		<text name="aPalletAutoLoader_hb_fillableAppleBox" text="HB - заполняемый яблочный поддон" />
-		<text name="aPalletAutoLoader_hb_PaperbagWare" text="HB - Товары в бумажных пакетах"/>
-		<text name="aPalletAutoLoader_hb_meatBox" text="HB - Мясной ящик"/>
-		<text name="aPalletAutoLoader_hb_IBC Tank" text="HB - IBC Tank"/>
-		<text name="aPalletAutoLoader_hb_breadbox" text="HB - Коробка с хлебом"/>
-		<text name="aPalletAutoLoader_hb_liquidYeastCanister" text="HB - Пивные дрожжи"/>
-		<text name="aPalletAutoLoader_hb_hopsBale" text="HB - Пивной хмель"/>
-		<text name="aPalletAutoLoader_hb_glasswoodbox" text="HB - Деревянная шкатулка с очками"/>
-		<text name="aPalletAutoLoader_hb_wineBarrel" text="HB - Бочка сидра"/>
-		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="HB - Коробка с курицей (сырой)"/>		
+		<text name="aPalletAutoLoader_hb_woodbox" text="наполняемая коробка для фруктов, маленькая" />
+		<text name="aPalletAutoLoader_hb_closedCardboard" text="картонная коробка" />
+		<text name="aPalletAutoLoader_hb_cardboard" text="Овощной ящик" />
+		<text name="aPalletAutoLoader_hb_cheese" text="Сыр" />
+		<text name="aPalletAutoLoader_hb_goatcheese" text="Козий сыр" />
+		<text name="aPalletAutoLoader_hb_eggWoodBox" text="Ящик для яиц" />
+		<!-- <text name="aPalletAutoLoader_hb_eggBox" text="яйца" /> -->
+		<text name="aPalletAutoLoader_hb_wineCrate" text="Винный ящик" />
+		<text name="aPalletAutoLoader_hb_roundwickerbaskets" text="круглые плетеные корзины" />
+		<text name="aPalletAutoLoader_hb_woolBundle" text="Wool Bundle" />
+		<text name="aPalletAutoLoader_hb_bigBag" text="Bigbag" />
+		<text name="aPalletAutoLoader_hb_PaperbagWare" text="Товары в бумажных пакетах"/>
+		<text name="aPalletAutoLoader_hb_IBC Tank" text="IBC Tank"/>
+		<text name="aPalletAutoLoader_hb_glasswoodbox" text="Деревянная шкатулка с очками"/>
+		<text name="aPalletAutoLoader_hb_pulletMeatBox" text="Коробка с курицей (сырой)"/>
+		<text name="aPalletAutoLoader_hb_greaseCan" text="Банка со смазкой"/>
+		<text name="aPalletAutoLoader_hb_beveragepallet" text="Тетрапак поддон"/>
+		<text name="aPalletAutoLoader_hb_eggBoxPallet" text="Поддон с коробкой, полной яиц"/>
+		<text name="aPalletAutoLoader_hb_vegetablePalett" text="Поддон с овощами"/>
+		<text name="aPalletAutoLoader_hb_strawberriesPallet" text="Палитра с клубникой"/>
 	</texts>
 </l10n>
