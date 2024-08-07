@@ -1,9 +1,10 @@
 --[[
 Copyright (C) Achimobil / Maverick1305 2023/ Horschd 2024
 
-Author: Maverick1305
-Date: 11.02.2023
-Version: 0.3.0.1
+Author:		Achimobil
+Co-author:	Maverick1305, Horschd
+Date: 		04.08.2024
+Version: 	0.5.1.1
 
 Contact:
 https://discord.gg/Va7JNnEkcW
@@ -11,7 +12,8 @@ https://discord.gg/Va7JNnEkcW
 History:
 V 0.1.0.0 @ 28.07.2022 - Initial Version
 V 0.5.0.0 @ 21.07.2024 - Additions added for HB V1.5.0.0 @ Horschd
-V 0.5.0.1 @ 21.07.2024 - further additions added for HB V1.5.0.0 @ Horschd
+V 0.5.1.0 @ 31.07.2024 - further additions added for HB V1.5.0.0 @ Horschd
+V 0.5.1.1 @ xx.xx.2024 - Bugfix for hopsBale, added potatoSack, added meatPallet
 
 Important:
 No copy and use in own mods allowed.
@@ -140,7 +142,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 --		lettucePallet.xml
 --		mushroomsPallet.xml
 --		tomatoPallet.xml
-		
+--		all meatPallet		
 
 	elseif (name == "hb_onionSack") then
 		local function CheckType(object)
@@ -311,7 +313,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 	elseif (name == "hb_hopsBale") then
 		local function CheckType(object)
 			if string.find(object.configFileName, "hopsBale.xml") then return true end
-			-- if string.find(object.configFileName, "hopsBale_empty.xml") then return true end
+			if string.find(object.configFileName, "hopsBale_empty.xml") then return true end
 			
 			return false;
 		end
@@ -367,7 +369,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.58, 0.54, 0.32, "pallet", "shopItem_animalSack", true, false)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.58, 0.54, 0.32, "pallet", "shopItem_animalSack", false, false)
 
 
 	elseif (name == "hb_pulletBox") then
@@ -378,7 +380,6 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
 		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.24, 0.42, 0.63, "pallet", "shopItem_pulletBox", true, true)
-
 
 
 	elseif (name == "hb_fishBoxFillable") then
@@ -430,7 +431,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.60, 0.80, 1.08, "pallet", "storeItem_animalSkinPallet", true, false)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.60, 0.80, 1.08, "pallet", "storeItem_animalSkinPallet", false, false)
 
 
 	elseif (name == "hb_fillableAnimalSkinBox") then
@@ -460,7 +461,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.65, 0.28, 0.95, "pallet", "aPalletAutoLoader_" .. name, true, true)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.65, 0.28, 0.95, "pallet", "aPalletAutoLoader_" .. name, false, true)
 		
 
 	elseif (name == "hb_woodChipsSack") then
@@ -502,8 +503,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		-- AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.20, 1.20, 0.80, "pallet", "aPalletAutoLoader_" .. name, true, false)
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.18, 1.20, 0.78, "pallet", "aPalletAutoLoader_" .. name, true, false)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.18, 1.20, 0.78, "pallet", "aPalletAutoLoader_" .. name, false, false)
 
 
 	elseif (name == "hb_vegetablePalett") then
@@ -517,7 +517,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.22, 1.01, 0.82, "pallet", "aPalletAutoLoader_" .. name, true, true)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.22, 1.01, 0.82, "pallet", "aPalletAutoLoader_" .. name, false, true)
 
 
 	elseif (name == "hb_strawberriesPallet") then
@@ -537,7 +537,17 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			return false;
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.22, 1.01, 0.82, "pallet", "storeItem_mushroomsBoxPallet", true, false)
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.22, 1.01, 0.82, "pallet", "storeItem_mushroomsBoxPallet", false, false)
+
+
+	elseif (name == "hb_potatoSack") then
+		local function CheckType(object)
+			if string.find(object.configFileName, "potatoSack.xml") then return true end
+			
+			return false;
+		end
+		autoLoadObject.CheckTypeMethod = CheckType
+		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 0.76, 1.20, 0.49, "pallet", "storeItem_potatoSack", false, false)
 
 
 	elseif (name == "euroPallet") then
@@ -548,6 +558,13 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			-- if object.configFileName ~= nil and string.find(object.configFileName, "animalSkinPallet") then return false end
 			if object.configFileName ~= nil and string.find(object.configFileName, "tanneryMixPallet") then return false end
 			if object.configFileName ~= nil and string.find(object.configFileName, "leatherPallet") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "beefmeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "deermeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "horsemeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "porkmeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "poultrymeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "rabbitmeatPallet.xml") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "sheepgoatmeatPallet.xml") then return true end
 			return superFunc(object);
 		end)
 
@@ -560,6 +577,13 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 			-- if object.configFileName ~= nil and string.find(object.configFileName, "animalSkinPallet") then return false end
 			if object.configFileName ~= nil and string.find(object.configFileName, "tanneryMixPallet") then return true end
 			if object.configFileName ~= nil and string.find(object.configFileName, "leatherPallet") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "beefmeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "deermeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "horsemeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "porkmeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "poultrymeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "rabbitmeatPallet.xml") then return false end
+			if object.configFileName ~= nil and string.find(object.configFileName, "sheepgoatmeatPallet.xml") then return false end
 			return superFunc(object);
 
 
@@ -622,8 +646,8 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	table.insert(types, "hb_meatBox");
 	table.insert(types, "hb_IBC Tank");
 	table.insert(types, "hb_breadbox");
-	table.insert(types, "hb_liquidYeastCanister");
 	table.insert(types, "hb_hopsBale");
+	table.insert(types, "hb_liquidYeastCanister");
 	table.insert(types, "hb_beerCrate");
 	table.insert(types, "hb_catFoodPallet");
 	table.insert(types, "hb_petCarrier");
@@ -646,6 +670,7 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	table.insert(types, "hb_vegetablePalett");
 	table.insert(types, "hb_strawberriesPallet");
 	table.insert(types, "hb_mushroomsPallet");
+	table.insert(types, "hb_potatoSack");
 	-- table.insert(types, "hb_cryoBarrel");	
 	
 	return types;

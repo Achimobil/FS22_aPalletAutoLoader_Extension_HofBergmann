@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="80">
     <author>Maverick1305/Achimobil/Horschd</author>
-    <version>0.5.1.0</version>
+    <version>0.5.1.1</version>
     <title>
         <de>Hof Bergmann AL Erweiterung</de>
         <en>Hof Bergmann AL Extension</en>
@@ -13,6 +13,12 @@
 Somit kann jeder Trailer der die Paletten Autoloader Spezialisierung von Achimobil verwendet auf der Hof Bergmann verwendet werden.
 
 Erfordert die Paletten Autoloader Spezialisierung ab Version 1.10.1.0
+
+Changelog:
+0.5.1.1 Horschd
+- 	Probleme mit dem Laden von Hopfen Ballen behoben
+-	Kartoffelsäcke vom Schrebergarten können nun auch, als "HB - Kartoffelsack" geladen werden
+-	alle Fleisch-Paletten können als Standard-Paletten geladen werden
 
 Changelog:
 0.5.1.0 Horschd
@@ -62,6 +68,11 @@ This means that any trailer that uses the pallet autoloader specialisation by Ac
 Requires the Pallet Autoloader Specialisation as of version 1.10.1.0
 
 Changelog:
+0.5.1.1 Horschd
+- Problems with loading hop bales fixed
+- Potato sacks from the allotment garden can now also be loaded as "HB - potato sack"
+- All meat pallets can be loaded as standard pallets
+
 0.5.1.0 Horschd
 New separate loads
 - Wood chip bag
